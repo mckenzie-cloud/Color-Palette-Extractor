@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1712062024 source:c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\main.c
+	<stdio.h>
+	<stdlib.h>
+	"raylib.h"
+	"kmeans.h"
+
+1704794285 c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\include\raylib.h
+	<stdarg.h>
+	<stdbool.h>
+
+1712060312 source:c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\kmeans.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	<time.h>
+	"raylib.h"
+	"kmeans.h"
+
+1711876408 c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\include\kmeans.h
+

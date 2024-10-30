@@ -45,12 +45,20 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="ciede00.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/ciede00.h" />
 		<Unit filename="include/kmeans.h" />
 		<Unit filename="include/raylib.h" />
+		<Unit filename="include/rgbtolab.h" />
 		<Unit filename="kmeans.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rgbtolab.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

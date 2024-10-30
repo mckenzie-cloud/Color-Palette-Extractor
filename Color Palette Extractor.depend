@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1712062024 source:c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\main.c
+1730279173 source:c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\main.c
 	<stdio.h>
 	<stdlib.h>
 	"raylib.h"
@@ -9,14 +9,32 @@
 	<stdarg.h>
 	<stdbool.h>
 
-1712060312 source:c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\kmeans.c
+1730282534 source:c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\kmeans.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<limits.h>
+	<float.h>
 	<time.h>
+	<math.h>
 	"raylib.h"
 	"kmeans.h"
+	"rgbtolab.h"
+	"ciede00.h"
 
-1711876408 c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\include\kmeans.h
+1730283131 c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\include\kmeans.h
+
+1729166552 source:c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\ciede00.c
+	"ciede00.h"
+	<math.h>
+
+1728979118 c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\include\ciede00.h
+
+1730275091 source:c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\rgbtolab.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"rgbtolab.h"
+
+1729160834 c:\users\mckenzie regalado\desktop\files\c gui projects\color palette extractor\include\rgbtolab.h
 

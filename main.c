@@ -4,9 +4,11 @@
 #include "raylib.h"
 #include "kmeans.h"
 
-#define K_CLUSTERS 10
+#define K_CLUSTERS 8
 #define SCREEN_WIDTH 500
 #define SCREEN_HEIGHT 500
+
+#define IMG_SIZE 200
 
 int main()
 {
@@ -17,8 +19,10 @@ int main()
 
     //--------------------------------------------------------------------------------------
 
-    const char *img_path = "images/chrollo.jpg";
+    const char *img_path = "images/pic5.jpg";
     Image image = LoadImage(img_path);
+    Image img_cpy = ImageCopy(image);
+
     Color dominant_colors[K_CLUSTERS];
 
     for (int i=0; i<K_CLUSTERS; i++) {
@@ -32,15 +36,16 @@ int main()
     } else {
 
         ImageResize(&image, image_w, image_h);
+        ImageResize(&img_cpy, IMG_SIZE, IMG_SIZE);
 
-        int n_points = image_w * image_h;
+        int n_points = IMG_SIZE * IMG_SIZE;
         Color *image_color_data = (Color *) malloc(n_points * sizeof(Color));
         for (int i=0; i<n_points; i++) {
-            int row = (int) i / image_w;
-            int col = (int) i % image_w;
-            image_color_data[i] = GetImageColor(image, row, col);
+            int row = (int) i / IMG_SIZE;
+            int col = (int) i % IMG_SIZE;
+            image_color_data[i] = GetImageColor(img_cpy, row, col);
         }
-        getDominantColors(n_points, image_color_data, dominant_colors);
+        getDominantColors(n_points, image_color_data, dominant_colors, 8);
         free(image_color_data);
 
         texture = LoadTextureFromImage(image);
